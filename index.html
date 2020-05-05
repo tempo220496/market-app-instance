@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market app</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top__line">
+            <div class="container">
+                <section class="top__selects">
+                    <select name="currency" id="currency" class="top__currency">
+                        <option value="us_dollar">$ US Dollar</option>
+                        <option value="ru_rubble">RU Rubble</option>
+                        <option value="kg_som">KG Som</option>
+                    </select>
+                    <select name="language" id="language">
+                        <option value="language">Language</option>
+                        <option value="english">English</option>
+                        <option value="russian">Russian</option>
+                        <option value="kyrgyz">Kyrgyz</option>
+                    </select>
+                </section>
+                <nav class="top__navbar">
+                    <select name="authorization" id="top__auth" class="top__link">
+                        <option value="my_account">My Account</option>
+                    </select>
+                    <a href="#" class="top__link"><span class="fa fa-heart"></span>  Wish list (0)</a>
+                    <a href="#" class="top__link"><span class="fa fa-check"></span> Checkout</a>
+                    <a href="#" class="top__link"><span class="fa fa-shopping-bag"></span> Login</a>
+                </nav>
+            </div>
+        </div>
+        <header class="header">
+            <section class="header__menu">
+                <div class="container">
+                    <section class="header__menu-present">
+                        <div class="header__menu-logo">
+                            <img src="./img/nike_logo.png" alt="" class="nike_logo">
+                            <span class="nike_intro uppercase">air force</span>
+                        </div>
+                        <div class="header__search-bar">
+                            <select name="category" id="category" class="header__search-category">
+                                <option value="all_categories">All categories</option>
+                            </select>
+                            <input type="text" placeholder="Keyword here..." class="header__search-input">
+                            <button class="header__search-button fa fa-search"></button>
+                        </div>
+                        <div class="header__shopping-report">
+                            <p class="shopping-card uppercase">shopping-cart</p>
+                            <p class="shopping-report">0 item(s)-$0.00</p>
+                        </div>
+                    </section>
+                    <section class="header__nav_right">
+                        <nav class="header__navbar">
+                            <select class="header__nav-link">
+                                <option value="home">
+                                    <a href="#">HOME</a>
+                                </option>
+                            </select>
+                            <select class="header__nav-link">
+                                <option value="">
+                                    <a href="#">LAYOUTS</a>
+                                </option>
+                            </select>
+                            <select class="header__nav-link">
+                                <option value="">
+                                    <a href="#">FEATURE</a>
+                                </option>
+                            </select>
+                            <select class="header__nav-link">
+                                <option value="">
+                                    <a href="#">SHOP</a>
+                                </option>
+                            </select>
+                            <select class="header__nav-link">
+                                <option value="">
+                                    <a href="#">BLOG</a>
+                                </option>
+                            </select>
+                            <select class="header__nav-link">
+                                <option value="">
+                                    <a href="#">PAGES</a>
+                                </option>
+                            </select>
+                        </nav>
+                    </section>
+                </div>
+            </section>
+            <section class="header__banner">
+                <div class="container">
+                    <section class="header__section">
+                        <h1 class="header__title uppercase">nike</h1>
+                        <h2 class="header__intro uppercase">air force 1 ultra flykint</h2>
+                        <p class="header__text">
+                            Lorem Ipsum is simply dummy text of the printing and 
+                            typesetting industry. Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s, when an 
+                            unknown printer took 
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="trainers__collection">
+                <div class="container">
+                    <h1 class="trainers__title uppercase">Men's</h1>
+                    <h2 class="trainers__intro uppercase">collection</h2>
+                    <div class="trainers__block">
+                        <section class="trainers__first-row flex-row">
+                            <div class="mens__collection">
+                                <section class="catalogue__collection">
+                                    <h1 class="catalogue__title uppercase color-white gotham-bold">men's</h1>
+                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+                                    <div class="view__all">
+                                       <span class="uppercase gotham-bold">view all</span>
+                                    </div>
+                                </section>
+                            </div>  
+                            <div class="unisex__collection">
+                                <section class="catalogue__collection">
+                                    <h1 class="catalogue__title uppercase color-white gotham-bold">unisex</h1>
+                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+                                    <div class="view__all">
+                                        <span class="uppercase gotham-bold">view all</span>
+                                     </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="trainers__second-row flex-row">
+                            <div class="womens__collection">
+                                <section class="catalogue__collection">
+                                    <h1 class="catalogue__title uppercase color-white gotham-bold">womens</h1>
+                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+                                    <div class="view__all">
+                                        <span class="uppercase gotham-bold">view all</span>
+                                     </div>
+                                </section>
+                            </div>
+                            <div class="lifestyle__collection">
+                                <section class="catalogue__collection">
+                                    <h1 class="catalogue__title uppercase color-white gotham-bold">lifestyle</h1>
+                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+                                    <div class="view__all">
+                                        <span class="uppercase gotham-bold">view all</span>
+                                     </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
