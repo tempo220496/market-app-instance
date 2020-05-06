@@ -31,7 +31,7 @@
 						<option value="my_account">My Account</option>
 					</select>
 					<a href="#" class="top__link"><span class="fa fa-heart"></span> Wish list (0)</a>
-					<a href="#" class="top__link"><span class="fa fa-check"></span> Checkout</a>
+					<a href="#" class="top__link top__link_checkout"><span class="fa fa-check"></span> Checkout</a>
 					<a href="#" class="top__link"><span class="fa fa-shopping-bag"></span> Login</a>
 				</nav>
 			</div>
@@ -39,7 +39,7 @@
 		<header class="header">
 			<section class="header__menu">
 				<div class="container">
-					<section class="header__menu-present">
+					<section class="header__menu-present flex-row flex-wrap">
 						<div class="header__menu-logo">
 							<img src="./img/nike_logo.png" alt="" class="nike_logo">
 							<span class="nike_intro uppercase">air force</span>
@@ -55,35 +55,33 @@
 							<p class="shopping-card uppercase">shopping-cart</p>
 							<p class="shopping-report">0 item(s)-$0.00</p>
 						</div>
-					</section>
-					<section class="header__nav_right">
 						<nav class="header__navbar">
-							<select class="header__nav-link">
+							<select class="header__nav-link gotham-medium-regular">
 								<option value="home">
 									<a href="#">HOME</a>
 								</option>
 							</select>
-							<select class="header__nav-link">
+							<select class="header__nav-link gotham-medium-regular">
 								<option value="">
 									<a href="#">LAYOUTS</a>
 								</option>
 							</select>
-							<select class="header__nav-link">
+							<select class="header__nav-link gotham-medium-regular">
 								<option value="">
 									<a href="#">FEATURE</a>
 								</option>
 							</select>
-							<select class="header__nav-link">
+							<select class="header__nav-link gotham-medium-regular">
 								<option value="">
 									<a href="#">SHOP</a>
 								</option>
 							</select>
-							<select class="header__nav-link">
+							<select class="header__nav-link gotham-medium-regular">
 								<option value="">
 									<a href="#">BLOG</a>
 								</option>
 							</select>
-							<select class="header__nav-link">
+							<select class="header__nav-link gotham-medium-regular">
 								<option value="">
 									<a href="#">PAGES</a>
 								</option>
@@ -92,20 +90,22 @@
 					</section>
 				</div>
 			</section>
-			<section class="header__banner">
-				<div class="container">
-					<section class="header__section">
-						<h1 class="header__title uppercase">nike</h1>
-						<h2 class="header__intro uppercase">air force 1 ultra flykint</h2>
-						<p class="header__text">
-							Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry. Lorem Ipsum has been the industry's
-							standard dummy text ever since the 1500s, when an
-							unknown printer took
-						</p>
-					</section>
-				</div>
-			</section>
+			<div class="header__background_crimson">
+				<section class="header__banner">
+					<div class="container">
+						<section class="header__section">
+							<h1 class="header__title uppercase">nike</h1>
+							<h2 class="header__intro uppercase">air force 1 ultra flykint</h2>
+							<p class="header__text margin-zero gotham-book">
+								Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's
+								standard dummy text ever since the 1500s, when an
+								unknown printer took
+							</p>
+						</section>
+					</div>
+				</section>
+			</div>
 		</header>
 		<main class="main">
 			<section class="trainers__collection">
@@ -113,8 +113,8 @@
 					<h1 class="trainers__title uppercase">Men's</h1>
 					<h2 class="trainers__intro uppercase">collection</h2>
 					<div class="trainers__block">
-						<section class="trainers__first-row flex-row">
-							<div class="mens__collection">
+						<section class="trainers__first-row flex-row flex-wrap">
+							<div class="mens__collection type__collection">
 								<section class="catalogue__collection">
 									<h1 class="catalogue__title uppercase color-white gotham-bold">men's</h1>
 									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
@@ -123,7 +123,7 @@
 									</div>
 								</section>
 							</div>
-							<div class="unisex__collection">
+							<div class="unisex__collection type__collection">
 								<section class="catalogue__collection">
 									<h1 class="catalogue__title uppercase color-white gotham-bold">unisex</h1>
 									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
@@ -133,8 +133,8 @@
 								</section>
 							</div>
 						</section>
-						<section class="trainers__second-row flex-row">
-							<div class="womens__collection">
+						<section class="trainers__second-row flex-row flex-wrap">
+							<div class="womens__collection type__collection">
 								<section class="catalogue__collection">
 									<h1 class="catalogue__title uppercase color-white gotham-bold">womens</h1>
 									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
@@ -143,7 +143,7 @@
 									</div>
 								</section>
 							</div>
-							<div class="lifestyle__collection">
+							<div class="lifestyle__collection type__collection">
 								<section class="catalogue__collection">
 									<h1 class="catalogue__title uppercase color-white gotham-bold">lifestyle</h1>
 									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
@@ -163,15 +163,15 @@
 			</section>
 			<section class="logos__section">
 				<div class="logos__block">
-					<section class="logos__first-row flex-row space-between">
+					<section class="logos__first-row flex-row space-between flex-wrap">
 						<img src="./img/roller-skates.png" alt="roller-skates" class="logos__img">
+						<img src="./img/adidas.png" alt="adidas" class="logos__img adidas__logo">
 						<div class="middle__logo">
-							<img src="./img/nike.png" alt="nike" class="logos__img">
+							<img src="./img/nike.png" alt="nike" class="logos__img nike__logo">
 							<h1 class="nike__title uppercase color-white gotham-bold">nike</h1>
 						</div>
-						<img src="./img/adidas.png" alt="adidas" class="logos__img">
 					</section>
-					<section class="logos__second-row flex-row space-around">
+					<section class="logos__second-row flex-row space-around flex-wrap">
 						<img src="./img/ego.png" alt="ego" class="logos__img">
 						<img src="./img/reebok.png" alt="reebok" class="logos__img">
 					</section>
@@ -187,7 +187,7 @@
 						<h2 class="products__intro uppercase margin-zero gotham-bold text-center">products</h2>
 						<section class="products__catalogue">
 							<h2 class="new__title uppercase gotham-bold margin-zero">new</h2>
-							<div class="products__block flex-row space-between">
+							<div class="products__block flex-row space-between flex-wrap">
 								<div class="product">
 									<div class="product__img product__first-img"></div>
 									<article class="product__evaluation">
@@ -254,8 +254,7 @@
 					<div class="product__info">
 						<img src="./img/trainers-effect.png" alt="trainers-effect" class="trainers__effect">
 						<img src="./img/sells-chart.png" alt="sells-chart" class="product__chart">
-						<span class="total__price roboto-condensed-regular">90<img src="./img/euro.png" alt="euro"
-								class="euro-symbol"></span>
+						<span class="total__price roboto-condensed-regular">90&euro;</span>
 						<div class="mixed-block">
 							<div class="mixed-word uppercase gotham-bold">mixed</div>
 							<div class="color-dots">
@@ -266,8 +265,11 @@
 						</div>
 						<div class="destination__area flex-center">
 							<div class="destination__circle flex-center">
-								<span class="destination__distance color-white gotham-medium">25 km <img src="./img/running_logo.png"
-										alt="running-logo"></span>
+								<span class="destination__distance color-white gotham-medium">
+									<span class="destination__number">25</span><br/>
+									<span class="km">km</span> 
+									<img src="./img/running_logo.png"
+										alt="running-logo" class="running__logo"></span>
 							</div>
 						</div>
 						<span class="km7 color-white gotham-medium">7km</span>
@@ -278,7 +280,7 @@
 				</div>
 			</section>
 			<section class="action__info">
-				<div class="container flex-row align-items-center space-between">
+				<div class="container flex-row align-items-center space-between flex-wrap">
 					<div class="info__block">
 						<h1 class="info__title color-white gotham-bold margin-zero">News letter</h1>
 						<p class="info__text color-white roboto-regular">
@@ -294,7 +296,7 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container flex-row space-around align-items-start">
+			<div class="container flex-row space-around align-items-start flex-wrap">
 				<section class="footer__section">
 					<h1 class="uppercase gotham-bold margin-zero footer__title_color">information</h1>
 					<div class="footer__list">

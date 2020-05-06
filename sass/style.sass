@@ -14,8 +14,8 @@ option
 @font-face 
     font-family: "Gotham Book"
     src: url('../fonts/Gotham_Book_Regular/Gotham_Book_Regular.otf')
-    font-weight: normal
-    font-style: normal
+    font-weight: regular
+    font-style: regular
 @font-face 
     font-family: "Copperplate_Gothic_Bold"
     src: url('../fonts/Copperplate_Gothic_Bold/Copperplate_Gothic_Bold.otf')
@@ -52,7 +52,7 @@ option
     font-family: "Copperplate_Gothic_Bold"
 .gotham-bold
     font-family: "Gotham_Bold"
-.gotham-medium
+.gotham-medium-regular
     font-family: "Gotham_Medium_Regular"
 .gotham-medium
     font-family: "Gotham_Medium"
@@ -81,6 +81,8 @@ option
     align-items: center
 .align-items-start
     align-items: flex-start
+.flex-wrap
+    flex-wrap: wrap
 .text-decoration-none
     text-decoration: none
 .text-center
@@ -113,6 +115,28 @@ option
     outline: none
     font-family: "Gotham Book"
     font-size: 1rem
+@media screen and (max-width: 724px)
+    .top__line .container
+        padding: 14px 0
+    .top__navbar
+        width: 440px
+    #top__auth
+        border-left: 1px solid #F8878F
+    .top__link
+        padding-bottom: 0.5rem
+    .top__link_checkout
+        padding-right: 1.9rem
+    .top__selects
+        width: 160px
+        padding-left: 1rem
+@media screen and (max-width: 617px)
+    .top__navbar
+        width: 300px
+@media screen and (max-width: 457px)
+    .top__line .container
+        justify-content: space-around
+    .top__navbar
+        width: 160px
 
 
 
@@ -120,27 +144,46 @@ option
 .header__menu-present
     display: flex
     align-items: center
+    flex-wrap: wrap
 .header__menu
     background: #000000
     //height: 204px
     border-bottom: 10px solid #fff
     padding: 22px 0
-
-
-
+@media screen and (max-width: 1230px)
+    .header__menu
+        padding: 22px 1rem
+@media screen and (max-width: 1100px)
+    .header__menu-present
+        flex-wrap: wrap
+@media screen and (max-width: 788px)
+    .header__menu
+        padding-bottom: 11px
+@media screen and (max-width: 788px)
+    .header__menu
+        border-bottom: 2px solid #fff
 
 
 
 .header__menu-logo
     display: flex
     align-items: center  
+    position: relative
 .nike_intro
     color: white
     font-size: .75rem
     font-weight: bold
     font-family: "Copperplate_Gothic_Bold"
-    position: relative
-    left: -45px
+    position: absolute
+    left: 125px
+    bottom: 0
+@media screen and (max-width: 1092px)
+    .header__menu-logo
+        width: 223px
+@media screen and (max-width: 832px)
+    .header__menu-logo
+        display: none
+
 
 
 
@@ -150,6 +193,7 @@ option
 .header__search-bar
     display: flex
     margin-left: auto
+    flex-wrap: wrap
 .header__search-category
     padding: 13px 11px 14px
     font-family: "Gotham Book"
@@ -165,6 +209,38 @@ option
     padding: 0.4rem 0.6rem 
 .fa.fa-search
     font-size: 2rem
+@media screen and (max-width: 812px)
+    .header__search-bar
+        margin: 0 auto
+@media screen and (max-width: 606px)
+    .header__search-input
+        width: 340px
+@media screen and (max-width: 573px)
+    .header__search-input
+        width: 325px
+@media screen and (max-width: 570px)
+    .header__search-input
+        width: 310px
+@media screen and (max-width: 540px)
+    .header__search-input
+        width: 280px
+@media screen and (max-width: 513px)
+    .header__search-input
+        width: 250px
+@media screen and (max-width: 480px)
+    .header__search-input
+        width: 220px
+@media screen and (max-width: 452px)
+    .header__search-input
+        width: 220px
+@media screen and (max-width: 506px)
+    .header__search-category  
+        flex: 1 1 100%
+    .header__search-input
+        flex: 1
+
+
+
 
 
 
@@ -179,36 +255,104 @@ option
     margin-left: 4.5rem
 .shopping-report,.shopping-card
     margin: 0
+@media screen and (max-width: 1230px)
+    .header__shopping-report
+        margin-left: 1rem
+@media screen and (max-width: 1108px)
+    .header__shopping-report
+        margin-left: 0
+@media screen and (max-width: 1004px)
+    .header__shopping-report
+        margin-top: 1rem
+        margin-bottom: 1rem
+@media screen and (max-width: 832px)
+    .header__shopping-report
+        margin-left: 2rem
+        margin-top: 0
+        margin-bottom: 0
+@media screen and (max-width: 812px)
+    .header__shopping-report
+        margin-left: 0.5rem
+@media screen and (max-width: 788px)
+    .header__shopping-report
+        margin-top: 1rem
+@media screen and (max-width: 426px)
+    .header__shopping-report
+        max-width: 404px
+        display: flex
+        margin: 1rem auto 0
+    .shopping-report
+        margin-left: 0.5rem
+
+
+
+
 
 
 
 
     
-.header__nav_right
-    max-width: 100%
-    display: flex
 .header__navbar
+    max-width: 100%
     margin-left: auto
 .header__nav-link
     margin-left: 34px
-    font-family: "Gotham_Medium_Regular"
     background: #000
     color: #fff
     border: none
+    width: 89px
     &:hover
         color: #FD7587
+@media screen and (max-width: 962px)
+    .header__nav-link
+        margin-top: .5rem
+        margin-left: 10px
+@media screen and (max-width: 788px)
+    .header__navbar
+        margin-top: 0.125rem
+        max-width: 514px
+        margin-left: 0
+@media screen and (max-width: 726px)
+    .header__navbar
+        max-width: 484px
+@media screen and (max-width: 696px)
+    .header__navbar
+        max-width: 434px
+@media screen and (max-width: 666px)
+    .header__navbar
+        max-width: 364px
+@media screen and (max-width: 576px)
+    .header__navbar
+        max-width: 314px
+@media screen and (max-width: 566px)
+    .header__navbar
+        max-width: 314px
+@media screen and (max-width: 526px)
+    .header__navbar
+        max-width: 294px
+@media screen and (max-width: 506px)
+    .header__navbar
+        max-width: 214px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+@media screen and (max-width: 426px)
+    .header__navbar
+        max-width: 434px
+        
 
 
-
-
-
+.header__background_crimson
+    background: linear-gradient(90deg,#6F202D,#C62030)
 .header__banner
     background-image: url('../img/shoes_banner.png')
-    height: 820px
+    background-repeat: no-repeat
 .header__section
-    padding-top: 35rem
+    padding-top: 33rem
     max-width: 745px
     color: white
+    padding-bottom: 3em
+    font-size: 16px
 .header__title
     font-size: 4rem
     font-family: "Gotham_Bold"
@@ -217,16 +361,31 @@ option
 .header__intro
     font-size: 30px
     font-family: "Gotham_Bold"
-    margin: 1rem 0
+    margin: 1em 0
 .header__text
-    font-size: 18px
+    font-size: 1.125em
     font-family: "Gotham Book"
+@media screen and (max-width: 320px)
+    .header__section
+        padding: 8rem 1rem 1rem
+        font-size: 16px  
+    .header__banner
+        background-size: 150% auto
+        background-position-x: -85px
+    .header__title
+        font-size: 2rem
+        line-height: 2rem
+    .header__intro
+        font-size: 1rem
+    .header__text
+        padding-top: 1rem
+
+
 
 
 
 
 .trainers__collection
-    height: 1000px
     background: #fff
     font-family: "Gotham_Bold"
     text-align: center
@@ -243,9 +402,6 @@ option
 
 .trainers__block
     margin-top: 60px
-.trainers__first-row
-    max-width: 1200px
-    flex-wrap: wrap
 .mens__collection
     background: url('../img/mens_collection.png')
     max-width: 440px
@@ -273,20 +429,39 @@ option
     position: relative 
     top: -2px
     left: -2px
-
-
-
-
-
+@media screen and (max-width: 320px)
+    .mens__collection,.womens__collection,.unisex__collection,.lifestyle__collection
+        max-width: 320px
+    .mens__collection
+        background-position-x: 100%
+    .womens__collection
+        background-position-x: 75%
+    .unisex__collection
+        background-position-x: 45%
+    .lifestyle__collection
+        background-position-x: 60%
+@media screen and (max-width: 678px)
+    .type__collection
+        max-width: 440px
+    .unisex__collection,.lifestyle__collection
+        left: 0
+    .trainers__block
+        margin: 60px auto 0
+        max-width: 440px
 
 
 .catalogue__collection
     text-align: left
-    padding: 124px 0 0 52px
+    padding: 120px 0 0 52px
+    font-size: 16px
 .catalogue__title,.catalogue__intro
     font-size: 42px
     margin: 0
-
+@media screen and (max-width: 320px)
+    .catalogue__title,.catalogue__intro
+        font-size: 31.5px
+    .catalogue__collection
+        padding: 90px 0 0 52px
 
 
 .view__all
@@ -304,7 +479,9 @@ option
     font-size: 1rem
     position: absolute
     right: 0
-
+@media screen and (max-width: 320px)
+    .view__all
+        max-width: 200px
 
 
 
@@ -339,14 +516,42 @@ option
 .logos__first-row,.logos__second-row
     max-width: 100%
     padding-top: 70px
-.middle__logo
-    margin-left: 9rem
-    position: relative
 .nike__title
     font-size: 40px
     position: absolute
     top: -35px
     left: 45px
+.middle__logo
+    position: relative
+@media screen and (max-width: 320px)
+    .logos__img
+        max-width: 130px
+        height: auto
+        margin: 0 1rem
+    .middle__logo
+        max-width: 160px
+        align-self: flex-start
+        margin: 0 auto
+    .logos__first-row
+        justify-content: flex-start
+        max-width: 320px
+        padding-top: 20px
+    .logos__second-row
+        flex-direction: row
+        flex-wrap: nowrap
+        padding-top: 20px
+    .adidas__logo
+        align-self: center
+        margin: 20px auto
+    .nike__logo
+        margin: 40px auto 
+        max-width: 200px
+    .nike__title
+        font-size: 2rem
+        top: 0
+        left: 30px
+
+
 
 
 
@@ -361,6 +566,9 @@ option
     border-radius: 30px
     padding: 18px 48px
     cursor: pointer
+@media screen and (max-width: 320px)
+    .action__button
+        margin: 2.25rem auto 0
 
 
 
@@ -389,7 +597,14 @@ option
     background-image: url('../img/black-trainers.png')
 .product__third-img
     background-image: url('../img/white-trainers.png')
-        
+@media screen and (max-width: 320px)
+    .product
+        max-width: 320px
+    .product__img
+        width: 320px
+    .product__first-img,.product__second-img,.product__third-img
+        background-position-x: -40px
+
 
 
 
@@ -411,16 +626,19 @@ option
     margin-left: 0.5rem
 .products .action__button
     width: 150px
-
+@media screen and (max-width: 320px)
+    .product__evaluation
+        max-width: 200px
 
 
 
 
 .product__info
-    margin-top: 6rem
-    max-width: 1200px
+    padding-top: 6em
+    max-width: 75em
     position: relative
-    height: 700px
+    height: 43.75em
+    margin: 0 auto
 .product__chart
     position: absolute
     bottom: 0
@@ -428,15 +646,15 @@ option
     height: auto
 .trainers__effect
     position: absolute
-    max-width: 100%
-    height: auto
+    max-width: 55.0625em
 .total__price
-    font-size: 118.14px
+    font-size: 7.38375em
     position: absolute
-    right: 2rem
-.euro-symbol
-    position: absolute
-    top: 0
+    right: 0
+@media screen and (max-width: 320px)
+    .product__info
+        font-size: 3.75px
+
 
 
 
@@ -445,26 +663,28 @@ option
 
 .mixed-block
     position: absolute
-    max-width: 55px
-    right: 2rem
-    top: 8rem
+    max-width: 3.4375em
+    right: 2em
+    top: 8em
 .mixed-word
-    font-size: 1rem
+    font-size: 1em
 .color-dots
-    width: 11px
+    width: 0.6875em
     margin: 0 auto
 .color-dot
-    width: 11px
-    height: 11px
+    width: 0.6875em
+    height: 0.6875em
     border-radius: 50%
-    margin: 1rem 0 1rem 0 
+    margin: 1em 0 1em 0 
 .first-dot
     background-color: #207EBA
 .second-dot
     background-color: #F43C57
 .third-dot
     background-color: #E2D9D4
-
+@media screen and (max-width: 320px)
+    .mixed-block
+        top: 4rem
 
 
 
@@ -472,59 +692,79 @@ option
 
 
 .destination__area
-    width: 288px
-    height: 288px
+    width: 18em
+    height: 18em
     background-color: #26337c13
     border-radius: 50%
     position: absolute
-    top: 11.5rem
-    right: 14rem
+    bottom:  28%
+    right: 18.7%
+    //transform: translate(-28%,-18.7%)
 .destination__circle
-    width: 155px
-    height: 155px
+    width: 9.6875em
+    height: 9.6875em
     background-color: #F43C57
     border-radius: 50% 
 .destination__distance
-    font-size: 20px
+    font-size: 1.25em  
     display: flex
     align-items: center
-
+.destination__number
+    font-size: 1.5em
+.running__logo
+    width: 2.625em
 .km7
     position: absolute
-    bottom: 8rem
-    left: 19rem
-    font-size: 20px
+    bottom: 17%
+    left: 25.5%
+    transform: translate(-17%,-25.5%)
+    font-size: 1.25em  
 .km15
     position: absolute
-    bottom: 7rem
-    left: 35.5rem
-    font-size: 20px    
+    bottom: 13%
+    left: 47%
+    transform: translate(-13%,-47%)
+    font-size: 1.25em    
 .nike-pop
     position: absolute
-    bottom: 5rem
-    right: 6rem
-    font-size: 22px   
+    bottom: 5%
+    right: 5%
+    font-size: 1.58984375em  
+    transform: translate(-5%,-5%) 
     display: flex 
     align-items: center
 .rarr
-    margin-left: 1rem
-
-
-
+    margin-left: 1em
+@media screen and (max-width: 320px)
+    .km7,.km15,.nike-pop
+        font-size: 12px
+    .km15
+        bottom: 10%
+        left: 47%
+        transform: translate(-10%,-47%)
+    .destination__number
+        font-size: 16px
+    .nike-pop
+    .km
+        display: none
 
 
 
 
 
 .action__info
-    height: 164px
     background-color: #F43C57
-    padding-top: 4rem   
+    padding: 4rem 0 4rem  
+@media screen and (max-width: 320px)
+    .action__info .container
+        max-width: 320px
+        padding: 0 1rem
 
 
 
 .info__block
     max-width: 468px
+    padding: 0 1rem
 .info__text
     font-size: 19px
 
@@ -543,14 +783,21 @@ option
     background: #fff
     padding: 22px 48px
     border-radius: 40px
-
+@media screen and (max-width: 320px)
+    .action__notice
+        font-size: 0.75rem
+    .action__subscribe
+        width: 264px
+        margin: 0 auto
 
 
 
 
 .footer
     background: url('../img/footer-banner.png')
-    height: 566px
+    padding-bottom: 0.9rem
+    background-repeat: no-repeat
+    background-size: 1727px auto
 .footer__title_color
     font-size: 1.125rem
     color: #F43C57
@@ -575,6 +822,21 @@ option
     top: 0
     left: 47%
     transform: translateX(-53%)
+@media screen and (max-width: 320px)
+    .footer__nike-block
+        margin-top: 2rem
+    .footer__nike-name
+        left: 35%
+    .footer
+        background-attachment: fixed
+        background-position: 100% 100%
+        background-size: cover
+    .footer__section
+        padding-top: 22.5px
+
+
+
+
 
 .footer__bottom
     margin-top: 2rem
