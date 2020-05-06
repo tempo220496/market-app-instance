@@ -1,161 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market app</title>
-    <link rel="stylesheet" href="sass/style.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Market app</title>
+	<link rel="stylesheet" href="sass/style.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="top__line">
-            <div class="container">
-                <section class="top__selects">
-                    <select name="currency" id="currency" class="top__currency">
-                        <option value="us_dollar">$ US Dollar</option>
-                        <option value="ru_rubble">RU Rubble</option>
-                        <option value="kg_som">KG Som</option>
-                    </select>
-                    <select name="language" id="language">
-                        <option value="language">Language</option>
-                        <option value="english">English</option>
-                        <option value="russian">Russian</option>
-                        <option value="kyrgyz">Kyrgyz</option>
-                    </select>
-                </section>
-                <nav class="top__navbar">
-                    <select name="authorization" id="top__auth" class="top__link">
-                        <option value="my_account">My Account</option>
-                    </select>
-                    <a href="#" class="top__link"><span class="fa fa-heart"></span>  Wish list (0)</a>
-                    <a href="#" class="top__link"><span class="fa fa-check"></span> Checkout</a>
-                    <a href="#" class="top__link"><span class="fa fa-shopping-bag"></span> Login</a>
-                </nav>
-            </div>
-        </div>
-        <header class="header">
-            <section class="header__menu">
-                <div class="container">
-                    <section class="header__menu-present">
-                        <div class="header__menu-logo">
-                            <img src="./img/nike_logo.png" alt="" class="nike_logo">
-                            <span class="nike_intro uppercase">air force</span>
-                        </div>
-                        <div class="header__search-bar">
-                            <select name="category" id="category" class="header__search-category">
-                                <option value="all_categories">All categories</option>
-                            </select>
-                            <input type="text" placeholder="Keyword here..." class="header__search-input">
-                            <button class="header__search-button fa fa-search"></button>
-                        </div>
-                        <div class="header__shopping-report">
-                            <p class="shopping-card uppercase">shopping-cart</p>
-                            <p class="shopping-report">0 item(s)-$0.00</p>
-                        </div>
-                    </section>
-                    <section class="header__nav_right">
-                        <nav class="header__navbar">
-                            <select class="header__nav-link">
-                                <option value="home">
-                                    <a href="#">HOME</a>
-                                </option>
-                            </select>
-                            <select class="header__nav-link">
-                                <option value="">
-                                    <a href="#">LAYOUTS</a>
-                                </option>
-                            </select>
-                            <select class="header__nav-link">
-                                <option value="">
-                                    <a href="#">FEATURE</a>
-                                </option>
-                            </select>
-                            <select class="header__nav-link">
-                                <option value="">
-                                    <a href="#">SHOP</a>
-                                </option>
-                            </select>
-                            <select class="header__nav-link">
-                                <option value="">
-                                    <a href="#">BLOG</a>
-                                </option>
-                            </select>
-                            <select class="header__nav-link">
-                                <option value="">
-                                    <a href="#">PAGES</a>
-                                </option>
-                            </select>
-                        </nav>
-                    </section>
-                </div>
-            </section>
-            <section class="header__banner">
-                <div class="container">
-                    <section class="header__section">
-                        <h1 class="header__title uppercase">nike</h1>
-                        <h2 class="header__intro uppercase">air force 1 ultra flykint</h2>
-                        <p class="header__text">
-                            Lorem Ipsum is simply dummy text of the printing and 
-                            typesetting industry. Lorem Ipsum has been the industry's 
-                            standard dummy text ever since the 1500s, when an 
-                            unknown printer took 
-                        </p>
-                    </section>
-                </div>
-            </section>
-        </header>
-        <main class="main">
-            <section class="trainers__collection">
-                <div class="container">
-                    <h1 class="trainers__title uppercase">Men's</h1>
-                    <h2 class="trainers__intro uppercase">collection</h2>
-                    <div class="trainers__block">
-                        <section class="trainers__first-row flex-row">
-                            <div class="mens__collection">
-                                <section class="catalogue__collection">
-                                    <h1 class="catalogue__title uppercase color-white gotham-bold">men's</h1>
-                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
-                                    <div class="view__all">
-                                       <span class="uppercase gotham-bold">view all</span>
-                                    </div>
-                                </section>
-                            </div>  
-                            <div class="unisex__collection">
-                                <section class="catalogue__collection">
-                                    <h1 class="catalogue__title uppercase color-white gotham-bold">unisex</h1>
-                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
-                                    <div class="view__all">
-                                        <span class="uppercase gotham-bold">view all</span>
-                                     </div>
-                                </section>
-                            </div>
-                        </section>
-                        <section class="trainers__second-row flex-row">
-                            <div class="womens__collection">
-                                <section class="catalogue__collection">
-                                    <h1 class="catalogue__title uppercase color-white gotham-bold">womens</h1>
-                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
-                                    <div class="view__all">
-                                        <span class="uppercase gotham-bold">view all</span>
-                                     </div>
-                                </section>
-                            </div>
-                            <div class="lifestyle__collection">
-                                <section class="catalogue__collection">
-                                    <h1 class="catalogue__title uppercase color-white gotham-bold">lifestyle</h1>
-                                    <h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
-                                    <div class="view__all">
-                                        <span class="uppercase gotham-bold">view all</span>
-                                     </div>
-                                </section>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer"></footer>
-    </div>
+	<div class="wrapper">
+		<div class="top__line">
+			<div class="container">
+				<section class="top__selects">
+					<select name="currency" id="currency" class="top__currency">
+						<option value="us_dollar">$ US Dollar</option>
+						<option value="ru_rubble">RU Rubble</option>
+						<option value="kg_som">KG Som</option>
+					</select>
+					<select name="language" id="language">
+						<option value="language">Language</option>
+						<option value="english">English</option>
+						<option value="russian">Russian</option>
+						<option value="kyrgyz">Kyrgyz</option>
+					</select>
+				</section>
+				<nav class="top__navbar">
+					<select name="authorization" id="top__auth" class="top__link">
+						<option value="my_account">My Account</option>
+					</select>
+					<a href="#" class="top__link"><span class="fa fa-heart"></span> Wish list (0)</a>
+					<a href="#" class="top__link"><span class="fa fa-check"></span> Checkout</a>
+					<a href="#" class="top__link"><span class="fa fa-shopping-bag"></span> Login</a>
+				</nav>
+			</div>
+		</div>
+		<header class="header">
+			<section class="header__menu">
+				<div class="container">
+					<section class="header__menu-present">
+						<div class="header__menu-logo">
+							<img src="./img/nike_logo.png" alt="" class="nike_logo">
+							<span class="nike_intro uppercase">air force</span>
+						</div>
+						<div class="header__search-bar">
+							<select name="category" id="category" class="header__search-category">
+								<option value="all_categories">All categories</option>
+							</select>
+							<input type="text" placeholder="Keyword here..." class="header__search-input">
+							<button class="header__search-button fa fa-search"></button>
+						</div>
+						<div class="header__shopping-report">
+							<p class="shopping-card uppercase">shopping-cart</p>
+							<p class="shopping-report">0 item(s)-$0.00</p>
+						</div>
+					</section>
+					<section class="header__nav_right">
+						<nav class="header__navbar">
+							<select class="header__nav-link">
+								<option value="home">
+									<a href="#">HOME</a>
+								</option>
+							</select>
+							<select class="header__nav-link">
+								<option value="">
+									<a href="#">LAYOUTS</a>
+								</option>
+							</select>
+							<select class="header__nav-link">
+								<option value="">
+									<a href="#">FEATURE</a>
+								</option>
+							</select>
+							<select class="header__nav-link">
+								<option value="">
+									<a href="#">SHOP</a>
+								</option>
+							</select>
+							<select class="header__nav-link">
+								<option value="">
+									<a href="#">BLOG</a>
+								</option>
+							</select>
+							<select class="header__nav-link">
+								<option value="">
+									<a href="#">PAGES</a>
+								</option>
+							</select>
+						</nav>
+					</section>
+				</div>
+			</section>
+			<section class="header__banner">
+				<div class="container">
+					<section class="header__section">
+						<h1 class="header__title uppercase">nike</h1>
+						<h2 class="header__intro uppercase">air force 1 ultra flykint</h2>
+						<p class="header__text">
+							Lorem Ipsum is simply dummy text of the printing and
+							typesetting industry. Lorem Ipsum has been the industry's
+							standard dummy text ever since the 1500s, when an
+							unknown printer took
+						</p>
+					</section>
+				</div>
+			</section>
+		</header>
+		<main class="main">
+			<section class="trainers__collection">
+				<div class="container">
+					<h1 class="trainers__title uppercase">Men's</h1>
+					<h2 class="trainers__intro uppercase">collection</h2>
+					<div class="trainers__block">
+						<section class="trainers__first-row flex-row">
+							<div class="mens__collection">
+								<section class="catalogue__collection">
+									<h1 class="catalogue__title uppercase color-white gotham-bold">men's</h1>
+									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+									<div class="view__all">
+										<span class="uppercase gotham-bold">view all</span>
+									</div>
+								</section>
+							</div>
+							<div class="unisex__collection">
+								<section class="catalogue__collection">
+									<h1 class="catalogue__title uppercase color-white gotham-bold">unisex</h1>
+									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+									<div class="view__all">
+										<span class="uppercase gotham-bold">view all</span>
+									</div>
+								</section>
+							</div>
+						</section>
+						<section class="trainers__second-row flex-row">
+							<div class="womens__collection">
+								<section class="catalogue__collection">
+									<h1 class="catalogue__title uppercase color-white gotham-bold">womens</h1>
+									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+									<div class="view__all">
+										<span class="uppercase gotham-bold">view all</span>
+									</div>
+								</section>
+							</div>
+							<div class="lifestyle__collection">
+								<section class="catalogue__collection">
+									<h1 class="catalogue__title uppercase color-white gotham-bold">lifestyle</h1>
+									<h1 class="catalogue__intro uppercase color-white gotham-bold">collection</h1>
+									<div class="view__all">
+										<span class="uppercase gotham-bold">view all</span>
+									</div>
+								</section>
+							</div>
+						</section>
+						<div class="dots">
+							<div class="dot selected-dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="logos__section">
+				<div class="logos__block">
+					<section class="logos__first-row flex-row space-between">
+						<img src="./img/roller-skates.png" alt="roller-skates" class="logos__img">
+						<div class="middle__logo">
+							<img src="./img/nike.png" alt="nike" class="logos__img">
+							<h1 class="nike__title uppercase color-white gotham-bold">nike</h1>
+						</div>
+						<img src="./img/adidas.png" alt="adidas" class="logos__img">
+					</section>
+					<section class="logos__second-row flex-row space-around">
+						<img src="./img/ego.png" alt="ego" class="logos__img">
+						<img src="./img/reebok.png" alt="reebok" class="logos__img">
+					</section>
+					<span class="action__button gotham-medium color-white gotham-medium uppercase">
+						view all
+					</span>
+				</div>
+			</section>
+			<section class="products">
+				<div class="container">
+					<div class="popular__products">
+						<h1 class="popular__title uppercase margin-zero gotham-bold text-center">popular</h1>
+						<h2 class="products__intro uppercase margin-zero gotham-bold text-center">products</h2>
+						<section class="products__catalogue">
+							<h2 class="new__title uppercase gotham-bold margin-zero">new</h2>
+							<div class="products__block flex-row space-between">
+								<div class="product">
+									<div class="product__img product__first-img"></div>
+									<article class="product__evaluation">
+										<h3 class="evaluation__title uppercase gotham-bold">
+											nike graphic pop
+										</h3>
+										<div class="products__stars">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+										</div>
+										<div class="product__price">
+											<span class="main__price gotham-bold">$21.00</span>
+											<span class="line-through gotham-medium">$25.00</span>
+										</div>
+									</article>
+								</div>
+								<div class="product">
+									<div class="product__img product__second-img"></div>
+									<article class="product__evaluation">
+										<h3 class="evaluation__title uppercase gotham-bold">
+											nike graphic pop
+										</h3>
+										<div class="products__stars">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+										</div>
+										<div class="product__price">
+											<span class="main__price gotham-bold">$21.00</span>
+											<span class="line-through gotham-medium">$25.00</span>
+										</div>
+									</article>
+								</div>
+								<div class="product">
+									<div class="product__img product__third-img"></div>
+									<article class="product__evaluation">
+										<h3 class="evaluation__title uppercase gotham-bold">
+											nike graphic pop
+										</h3>
+										<div class="products__stars">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+											<img src="./img/gold-star.png" alt="gold-star" class="product__gold-star">
+										</div>
+										<div class="product__price">
+											<span class="main__price gotham-bold">$21.00</span>
+											<span class="line-through gotham-medium">$25.00</span>
+										</div>
+									</article>
+								</div>
+							</div>
+						</section>
+						<span class="action__button gotham-medium color-white gotham-medium uppercase">
+							add to cart
+						</span>
+					</div>
+					<div class="product__info">
+						<img src="./img/trainers-effect.png" alt="trainers-effect" class="trainers__effect">
+						<img src="./img/sells-chart.png" alt="sells-chart" class="product__chart">
+						<span class="total__price roboto-condensed-regular">90<img src="./img/euro.png" alt="euro"
+								class="euro-symbol"></span>
+						<div class="mixed-block">
+							<div class="mixed-word uppercase gotham-bold">mixed</div>
+							<div class="color-dots">
+								<div class="color-dot first-dot"></div>
+								<div class="color-dot second-dot"></div>
+								<div class="color-dot third-dot"></div>
+							</div>
+						</div>
+						<div class="destination__area flex-center">
+							<div class="destination__circle flex-center">
+								<span class="destination__distance color-white gotham-medium">25 km <img src="./img/running_logo.png"
+										alt="running-logo"></span>
+							</div>
+						</div>
+						<span class="km7 color-white gotham-medium">7km</span>
+						<span class="km15 color-white gotham-medium">15km</span>
+						<span class="nike-pop uppercase color-white gotham-medium">nike-graphic-pop <span
+								class="rarr">&rarr;</span></span>
+					</div>
+				</div>
+			</section>
+			<section class="action__info">
+				<div class="container flex-row align-items-center space-between">
+					<div class="info__block">
+						<h1 class="info__title color-white gotham-bold margin-zero">News letter</h1>
+						<p class="info__text color-white roboto-regular">
+							You may unsubscribe at any moment. For that purpose,
+							please find our contact info in the legal notice.
+						</p>
+					</div>
+					<div class="action__subscribe flex-row align-items-center space-between">
+						<span class="action__notice uppercase color-white gotham-medium">your email address</span>
+						<span class="subscribe__button uppercase gotham-medium">subscribe</span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container flex-row space-around align-items-start">
+				<section class="footer__section">
+					<h1 class="uppercase gotham-bold margin-zero footer__title_color">information</h1>
+					<div class="footer__list">
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">delivery</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">about us</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">pages configuration</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">prices drop</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">contact us</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">sitemap</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">stores</a>
+						</li>
+					</div>
+				</section>
+				<section class="footer__section">
+					<h1 class="uppercase gotham-bold margin-zero footer__title_color">your account</h1>
+					<div class="footer__list">
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">personal info</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">orders</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">credit clips</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">addresses</a>
+						</li>
+					</div>
+				</section>
+				<section class="footer__section">
+					<h1 class="uppercase gotham-bold margin-zero footer__title_color">categories</h1>
+					<div class="footer__list">
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">men</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">athletic</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">women</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">boys</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">girls</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">sale</a>
+						</li>
+					</div>
+				</section>
+				<section class="footer__section">
+					<h1 class="uppercase gotham-bold margin-zero footer__title_color">store information</h1>
+					<div class="footer__list">
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none"><i class="fa fa-map-marker"></i>
+								HAMINTEC4578 GLASGOW D04
+								UNITED STATES</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">
+								<span class="fa fa-phone"></span> 9845321232
+							</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class="footer__link color-white text-decoration-none">
+								<i class="fa fa-envelope"></i> info@himanshu.com
+							</a>
+						</li>
+						<li class="footer__item color-white uppercase roboto-regular">
+							<a href="#" class=" footer__logo_link footer__link color-white text-decoration-none">
+								<span class="fa fa-twitter"></span></a>
+							<a href="#" class=" footer__logo_link footer__link color-white text-decoration-none">
+								<span class="fa fa-facebook"></span></a>
+							<a href="#" class=" footer__logo_link footer__link color-white text-decoration-none">
+								<span class="fa fa-dribbble"></span></a>
+							<a href="#" class=" footer__logo_link footer__link color-white text-decoration-none">
+								<span class="fa fa-google-plus"></span></a>
+						</li>
+					</div>
+				</section>
+			</div>
+			<section class="footer__nike-block flex-center">
+				<img src="./img/nike.png" alt="footer-nike-logo" class="footer__nike">
+				<span class="footer__nike-name color-white uppercase gotham-bold">nike</span>
+			</section>
+			<div class="footer__bottom">
+				<h3 class="footer__bottom-title color-white text-center gotham-book">
+					© 2018 - Ecommerce software by PrestaShop™
+				</h3>
+			</div>
+		</footer>
+	</div>
 </body>
+
 </html>

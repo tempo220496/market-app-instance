@@ -4,6 +4,8 @@ html,body
     width: 100%
     height: 100%
     background-color: #282828
+    user-select: none
+    scroll-behavior: smooth
 .container
     max-width: 1200px
     margin: 0 auto
@@ -11,26 +13,53 @@ option
     outline: none
 @font-face 
     font-family: "Gotham Book"
-    src: url('../Gotham_Book_Regular/Gotham_Book_Regular.otf')
+    src: url('../fonts/Gotham_Book_Regular/Gotham_Book_Regular.otf')
     font-weight: normal
     font-style: normal
 @font-face 
     font-family: "Copperplate_Gothic_Bold"
-    src: url('../Copperplate_Gothic_Bold/Copperplate_Gothic_Bold.otf')
+    src: url('../fonts/Copperplate_Gothic_Bold/Copperplate_Gothic_Bold.otf')
     font-weight: bold
     font-style: normal
 @font-face 
     font-family: "Gotham_Medium_Regular"
-    src: url('../Gotham_Medium_Regular/Gotham_Medium_Regular.ttf')
+    src: url('../fonts/Gotham_Medium_Regular/Gotham_Medium_Regular.ttf')
     font-weight: normal
     font-style: normal
 @font-face 
     font-family: "Gotham_Bold"
-    src: url("../Gotham_Bold/Gotham_Bold.otf")
+    src: url("../fonts/Gotham_Bold/Gotham_Bold.otf")
     font-weight: bold
     font-style: normal
+@font-face 
+    font-family: "Gotham_Medium"
+    src: url("../fonts/Gotham_Medium/Gotham_Medium.otf")
+    font-weight: normal
+    font-style: normal
+@font-face 
+    font-family: "RobotoCondensed-Regular"
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf")
+    font-weight: normal
+    font-style: normal
+@font-face 
+    font-family: "Roboto-Regular"
+    src: url("../fonts/Roboto/Roboto-Regular.ttf")
+    font-weight: normal
+    font-style: normal
+.gotham-book
+    font-family: "Gotham Book"
+.copperplate-gothic-bold
+    font-family: "Copperplate_Gothic_Bold"
 .gotham-bold
     font-family: "Gotham_Bold"
+.gotham-medium
+    font-family: "Gotham_Medium_Regular"
+.gotham-medium
+    font-family: "Gotham_Medium"
+.roboto-condensed-regular
+    font-family: "RobotoCondensed-Regular"
+.roboto-regular
+    font-family: 'roboto-regular'
 .uppercase
     text-transform: uppercase
 .color-white
@@ -38,6 +67,26 @@ option
 .flex-row
     display: flex
     flex-direction: row
+.space-between
+    justify-content: space-between
+.space-around
+    justify-content: space-around
+.space-evenly
+    justify-content: space-evenly
+.align-items-center
+    align-items: center
+.flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+.align-items-start
+    align-items: flex-start
+.text-decoration-none
+    text-decoration: none
+.text-center
+    text-align: center
+.margin-zero
+    margin: 0
 .wrapper
     max-width: 1727px
     margin: 0 auto
@@ -255,3 +304,281 @@ option
     font-size: 1rem
     position: absolute
     right: 0
+
+
+
+
+.dots
+    max-width: 100px
+    margin: 52px auto 0
+    display: flex
+    align-items: center
+.dot
+    border-radius: 50%
+    background-color: #858585
+    width: 1rem
+    height: 1rem
+    margin: 0 .25rem
+.selected-dot
+    width: 1.5rem
+    height: 1.5rem
+    background-color: #F43A55
+
+
+
+
+
+
+
+.logos__section
+    background-image: url('../img/leather-banner.png')
+    height: 555px
+.logos__block
+    max-width: 770px
+    margin: 0 auto
+.logos__first-row,.logos__second-row
+    max-width: 100%
+    padding-top: 70px
+.middle__logo
+    margin-left: 9rem
+    position: relative
+.nike__title
+    font-size: 40px
+    position: absolute
+    top: -35px
+    left: 45px
+
+
+
+
+.action__button
+    display: block
+    margin: 4.5rem auto 0
+    width: 105px
+    font-size: 20px
+    font-weight: light
+    background-color: #F43A55
+    border-radius: 30px
+    padding: 18px 48px
+    cursor: pointer
+
+
+
+.products
+    background: #fff
+    padding-top: 56px
+.popular__title
+    font-size: 42px
+.products__intro
+
+
+.new__title
+    font-size: 28px
+    color: #F43A55
+    margin-left: 1rem
+.products__block
+    max-width: 100%
+    margin-top: 1rem
+.product__img
+    width: 400px
+    height: 340px
+    background-size: cover
+.product__first-img
+    background-image: url('../img/grey-trainers.png')
+.product__second-img
+    background-image: url('../img/black-trainers.png')
+.product__third-img
+    background-image: url('../img/white-trainers.png')
+        
+
+
+
+.product__evaluation
+    max-width: 250px
+    margin: 0 auto
+.evaluation__title
+    font-size: 22px
+    color: #282422
+.main__price
+    font-size: 25px
+    color: #F43A55
+.product__price
+    margin-top: 1rem
+.line-through
+    font-size: 17px
+    text-decoration: line-through
+    color: #939190
+    margin-left: 0.5rem
+.products .action__button
+    width: 150px
+
+
+
+
+
+.product__info
+    margin-top: 6rem
+    max-width: 1200px
+    position: relative
+    height: 700px
+.product__chart
+    position: absolute
+    bottom: 0
+    max-width: 100%
+    height: auto
+.trainers__effect
+    position: absolute
+    max-width: 100%
+    height: auto
+.total__price
+    font-size: 118.14px
+    position: absolute
+    right: 2rem
+.euro-symbol
+    position: absolute
+    top: 0
+
+
+
+
+
+
+.mixed-block
+    position: absolute
+    max-width: 55px
+    right: 2rem
+    top: 8rem
+.mixed-word
+    font-size: 1rem
+.color-dots
+    width: 11px
+    margin: 0 auto
+.color-dot
+    width: 11px
+    height: 11px
+    border-radius: 50%
+    margin: 1rem 0 1rem 0 
+.first-dot
+    background-color: #207EBA
+.second-dot
+    background-color: #F43C57
+.third-dot
+    background-color: #E2D9D4
+
+
+
+
+
+
+
+.destination__area
+    width: 288px
+    height: 288px
+    background-color: #26337c13
+    border-radius: 50%
+    position: absolute
+    top: 11.5rem
+    right: 14rem
+.destination__circle
+    width: 155px
+    height: 155px
+    background-color: #F43C57
+    border-radius: 50% 
+.destination__distance
+    font-size: 20px
+    display: flex
+    align-items: center
+
+.km7
+    position: absolute
+    bottom: 8rem
+    left: 19rem
+    font-size: 20px
+.km15
+    position: absolute
+    bottom: 7rem
+    left: 35.5rem
+    font-size: 20px    
+.nike-pop
+    position: absolute
+    bottom: 5rem
+    right: 6rem
+    font-size: 22px   
+    display: flex 
+    align-items: center
+.rarr
+    margin-left: 1rem
+
+
+
+
+
+
+
+
+.action__info
+    height: 164px
+    background-color: #F43C57
+    padding-top: 4rem   
+
+
+
+.info__block
+    max-width: 468px
+.info__text
+    font-size: 19px
+
+
+.action__subscribe
+    border: 1px solid #ffffff
+    border-radius: 40px
+    width: 474px
+    height: 66px
+.action__notice
+    font-size: 1rem
+    margin-left: 1rem
+.subscribe__button
+    font-size: 19px
+    color: #222121
+    background: #fff
+    padding: 22px 48px
+    border-radius: 40px
+
+
+
+
+
+.footer
+    background: url('../img/footer-banner.png')
+    height: 566px
+.footer__title_color
+    font-size: 1.125rem
+    color: #F43C57
+    padding-bottom: 1rem
+.footer__section
+    padding-top: 90px
+    width: 266px
+.footer__list
+    list-style-type: none
+.footer__item
+    line-height: 2rem
+.footer__logo_link
+    margin-right: 1rem
+    font-size: 1.25rem
+.fa.fa-phone,.fa.fa-map-marker,.fa.fa-envelope
+    color: #F43C57
+.footer__nike-block
+    position: relative
+.footer__nike-name
+    font-size: 2.5rem
+    position: absolute
+    top: 0
+    left: 47%
+    transform: translateX(-53%)
+
+.footer__bottom
+    margin-top: 2rem
+    border-top: 1px solid #3B3838
+.footer__bottom-title
+    margin-top: 2rem
+    font-size: 14px
